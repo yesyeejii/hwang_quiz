@@ -1,0 +1,16 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+  # 빌드 명령 없음 = 정적 파일만 배포 (index.html이 루트에 있어야 함)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Opener-Policy = "same-origin-allow-popups"
+    # Cross-Origin-Embedder-Policy = "require-corp" # Optional, can be strict
+

@@ -1,0 +1,9 @@
+{
+  "name": "google-sheets-grading-app",
+  "version": "1.0.0",
+  "description": "Smart AI Grading System",
+  "dependencies": {
+    "openai": "^4.20.1"
+  }
+}
+
